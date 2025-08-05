@@ -78,15 +78,58 @@ section:last-child {
     margin-top: 5%;
     margin-left: 50%;
     transform: translate(-50%) scale(0.8);
-    border-radius: 30px;
     border: 2px solid rgba(236, 235, 235) ;
     outline: 10px solid white;
     box-shadow: 5px 5px 50px rgb(156, 155, 155 , 0.7);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
 }
 
-.mobile * {
-    animation: fadeIn 3s;
-} 
+.mob-heading , .mob-footer {
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
+
+.mob-body > * {
+    opacity: 0;
+}
+
+.mob-body > p:nth-child(1) {
+    -webkit-animation: fadeIn 1s 2s forwards;
+    animation: fadeIn 1s 2s forwards;
+}
+
+.mob-body > p:nth-child(2) {
+    -webkit-animation: fadeIn 1s 3s forwards;
+    animation: fadeIn 1s 3s forwards;
+}
+.mob-body > div:nth-child(3) {
+    -webkit-animation: fadeIn 1s 5s forwards;
+    animation: fadeIn 1s 5s forwards;
+}
+.mob-body > p:nth-child(4) {
+    -webkit-animation: fadeIn 1s 6s forwards;
+    animation: fadeIn 1s 6s forwards;
+}
+.mob-body > p:nth-child(5) {
+    -webkit-animation: fadeIn 1s 7s forwards;
+    animation: fadeIn 1s 7s forwards;
+}
+.mob-body > p:nth-child(6) {
+    -webkit-animation: fadeIn 1s 9s forwards;
+    animation: fadeIn 1s 9s forwards;
+}
+.mob-body > div:nth-child(7) {
+    -webkit-animation: fadeIn 1s 10s forwards;
+    animation: fadeIn 1s 10s forwards;
+}
+.mob-body > div:nth-child(8) {
+    -webkit-animation: fadeIn 1s 10s forwards;
+    animation: fadeIn 1s 10s forwards;
+}
 
 @keyframes fadeIn {
     from {
